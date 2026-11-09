@@ -1,0 +1,8 @@
+# Секреты и данные — никогда не в репозиторий
+config.ini
+.env
+*.db
+*.db-journal
+*.csv
+__pycache__/
+*.pyc
