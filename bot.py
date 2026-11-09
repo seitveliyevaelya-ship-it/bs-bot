@@ -43,7 +43,7 @@ DIR_LABEL = {"in": "вх", "out": "исх"}
 # ---------- настройки ----------
 def load_config():
     """Сначала переменные окружения (Railway), затем config.ini (локальный запуск)."""
-    token = os.environ.get("BOT_TOKEN", "").strip()
+    token = (os.environ.get("BOT_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN") or "").strip()
     raw = os.environ.get("ALLOWED_USER_IDS")
     if CFG_PATH.exists():
         cfg = configparser.ConfigParser()

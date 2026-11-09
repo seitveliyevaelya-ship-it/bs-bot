@@ -13,7 +13,7 @@
 ## Деплой на Railway
 1. railway.com → **New Project** → **Deploy from GitHub repo** → выберите этот репозиторий.
 2. В сервисе → **Variables** добавьте:
-   - `BOT_TOKEN` — токен от @BotFather
+   - `BOT_TOKEN` (или `TELEGRAM_BOT_TOKEN`) — токен от @BotFather
    - `ALLOWED_USER_IDS` — ваш Telegram ID (несколько — через запятую)
    - `DB_PATH` = `/data/invoices.db`
 3. В сервисе → **Settings → Volumes** (или правый клик → **Attach Volume**) → mount path `/data`.
